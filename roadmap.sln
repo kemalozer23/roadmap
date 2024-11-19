@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet-roadmap", "dotnet-roadmap", "{21C17BF1-F649-49A6-8EE4-E43CE9A73A8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet-core-basics", "dotnet-core-basics", "{BEBABDC7-5B1C-48A7-BE15-83DF9DA77A24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "authentication-and-authorization", "authentication-and-authorization", "{9186D408-F83B-497D-875D-C7784CF03309}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthDemo", "AuthDemo", "{F325F9ED-1788-48C7-A7E7-31A8493BA48B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.Core", "dotnet-roadmap\dotnet-core-basics\authentication-and-authorization\AuthDemo\AuthDemo.Core\AuthDemo.Core.csproj", "{8A4B8245-2D0C-43F9-86C9-34687D9F6588}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.Application", "dotnet-roadmap\dotnet-core-basics\authentication-and-authorization\AuthDemo\AuthDemo.Application\AuthDemo.Application.csproj", "{DE946D52-5D57-48AD-AE11-DA240F8C3756}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.Api", "dotnet-roadmap\dotnet-core-basics\authentication-and-authorization\AuthDemo\AuthDemo.Api\AuthDemo.Api.csproj", "{5E27EDD4-53DD-4BA9-A343-051AB3B7E6B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.Infrastructure", "dotnet-roadmap\dotnet-core-basics\authentication-and-authorization\AuthDemo\AuthDemo.Infrastructure\AuthDemo.Infrastructure.csproj", "{EF731464-E94B-45E1-8D8D-0D5E87305CDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A4B8245-2D0C-43F9-86C9-34687D9F6588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4B8245-2D0C-43F9-86C9-34687D9F6588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4B8245-2D0C-43F9-86C9-34687D9F6588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4B8245-2D0C-43F9-86C9-34687D9F6588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE946D52-5D57-48AD-AE11-DA240F8C3756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE946D52-5D57-48AD-AE11-DA240F8C3756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE946D52-5D57-48AD-AE11-DA240F8C3756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE946D52-5D57-48AD-AE11-DA240F8C3756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E27EDD4-53DD-4BA9-A343-051AB3B7E6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E27EDD4-53DD-4BA9-A343-051AB3B7E6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E27EDD4-53DD-4BA9-A343-051AB3B7E6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E27EDD4-53DD-4BA9-A343-051AB3B7E6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF731464-E94B-45E1-8D8D-0D5E87305CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF731464-E94B-45E1-8D8D-0D5E87305CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF731464-E94B-45E1-8D8D-0D5E87305CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF731464-E94B-45E1-8D8D-0D5E87305CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BEBABDC7-5B1C-48A7-BE15-83DF9DA77A24} = {21C17BF1-F649-49A6-8EE4-E43CE9A73A8D}
+		{9186D408-F83B-497D-875D-C7784CF03309} = {BEBABDC7-5B1C-48A7-BE15-83DF9DA77A24}
+		{F325F9ED-1788-48C7-A7E7-31A8493BA48B} = {9186D408-F83B-497D-875D-C7784CF03309}
+		{8A4B8245-2D0C-43F9-86C9-34687D9F6588} = {F325F9ED-1788-48C7-A7E7-31A8493BA48B}
+		{DE946D52-5D57-48AD-AE11-DA240F8C3756} = {F325F9ED-1788-48C7-A7E7-31A8493BA48B}
+		{5E27EDD4-53DD-4BA9-A343-051AB3B7E6B7} = {F325F9ED-1788-48C7-A7E7-31A8493BA48B}
+		{EF731464-E94B-45E1-8D8D-0D5E87305CDB} = {F325F9ED-1788-48C7-A7E7-31A8493BA48B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DAB19F4-940C-4690-B132-3CAD34D6BBA6}
+	EndGlobalSection
+EndGlobal

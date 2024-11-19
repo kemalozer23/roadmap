@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "/wAg8ECvyyRumbjlWPH4SfFB18UDRsFDfPqoajuTlIde7dGTerJaeasgTi/F3cQERTRZ51WjcHXH0Q/EWzGg6g==",
+  "success": true,
+  "projectFilePath": "/Users/kemalozer/Code/Personal/roadmap/dotnet-roadmap/dotnet-core-basics/authentication-and-authorization/AuthDemo/AuthDemo.Api/AuthDemo.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/kemalozer/.nuget/packages/microsoft.aspnetcore.openapi/8.0.1/microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
+    "/Users/kemalozer/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/kemalozer/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/kemalozer/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/kemalozer/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/kemalozer/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/kemalozer/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
