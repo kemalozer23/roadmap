@@ -22,3 +22,9 @@ Z
 *Migrations/20241120194142_InitialCreate.cs,a/5/a52bbe9215cb3843982017d19592ce309b6a9161
 F
 Models/RegisterUser.cs,c/e/ce4d782e561939164e76483dd25a1cc59156a5a4
+C
+Models/LoginUser.cs,7/d/7dfd00678248e160d0e8db3b34841c3115bfc2c6
+@
+TokenProvider.cs,0/1/012d81ba7eec443124d604bec4a657be39a20b88
+@
+appsettings.json,b/c/bc678f3600cdefd583b88522810b2a538d8ffd6a
