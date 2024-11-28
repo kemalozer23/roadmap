@@ -3,10 +3,6 @@
 Entities/User.cs,b/e/bebdaeaf0ce675ff941aba70b5d4a0b0603f196e
 @
 Entities/Role.cs,8/e/8ef56726071391cb0eb0c13fcc3461f75dc9f483
-T
-$Infrastructure/ApplicationContext.cs,2/0/2096aea559e924888fda29964b648a9c37fe1c79
-A
-AuthDemo.Api.http,0/4/04e187c69a197da0df72a4c6a22b69dc4ad50397
 :
 
 Program.cs,1/5/1595e9a250ff95aa8621fbd0083b2a19287dac41
@@ -18,8 +14,6 @@ L
 appsettings.Development.json,4/4/44ff8956068a15e1ec00c171ebd93517be20a24d
 N
 Properties/launchSettings.json,9/8/984cefae6e43933708b57b6d4f368dd62b3283ef
-Z
-*Migrations/20241120194142_InitialCreate.cs,a/5/a52bbe9215cb3843982017d19592ce309b6a9161
 F
 Models/RegisterUser.cs,c/e/ce4d782e561939164e76483dd25a1cc59156a5a4
 C
@@ -30,3 +24,5 @@ C
 appsettings.json,b/c/bc678f3600cdefd583b88522810b2a538d8ffd6a
 @
 UserEndpoints.cs,e/a/ea3085e9023d178cf0a638be8ccf9b9e3dc3fbd0
+A
+Models/GetUser.cs,a/e/aeabdb3272c533bdda864ff8e30dac75f8df0b4c

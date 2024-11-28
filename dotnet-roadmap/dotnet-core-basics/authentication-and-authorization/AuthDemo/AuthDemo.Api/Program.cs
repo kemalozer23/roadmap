@@ -1,39 +1,83 @@
+using System.Security.Claims;
 using System.Text;
 using AuthDemo.Api;
 using AuthDemo.Api.Infrastructure;
 using AuthDemo.Api.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(o =>
+    {
+        o.Password.RequireDigit = false;
+        o.Password.RequireLowercase = false;
+        o.Password.RequireUppercase = false;
+        o.Password.RequireNonAlphanumeric = false;
+        o.Password.RequiredLength = 6;
+    })
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddSingleton<TokenProvider>();
 
-builder.Services.AddAuthorization();
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(o =>
-{
-    o.RequireHttpsMetadata = false;
-    o.TokenValidationParameters = new TokenValidationParameters
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(o =>
     {
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]!)),
-        ValidIssuer = builder.Configuration["Jwt:Issuers"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        ClockSkew = TimeSpan.Zero
+        o.RequireHttpsMetadata = false;
+        o.TokenValidationParameters = new TokenValidationParameters
+        {
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]!)),
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+builder.Services.AddAuthorization();
+
+builder.Services.AddSwaggerGen(o =>
+{
+    o.CustomSchemaIds(id => id.FullName!.Replace("+", "-"));
+
+    var securityScheme = new OpenApiSecurityScheme
+    {
+        Name = "JWT Authentication",
+        Description = "Enter your JWT token in this field",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = JwtBearerDefaults.AuthenticationScheme,
+        BearerFormat = "JWT"
     };
+    o.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityScheme);
+
+    var securityRequirement = new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = JwtBearerDefaults.AuthenticationScheme
+                }
+            },
+            new List<string>()
+        }
+    };
+
+    o.AddSecurityRequirement(securityRequirement);
 });
 
 var app = builder.Build();
@@ -45,10 +89,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthentication();
 app.UseAuthorization();
+app.UseAuthentication();
+// app.UseHttpsRedirection();
+
+app.MapPost("/user/get", async (GetUser request, UserManager<IdentityUser> userManager) =>
+    {
+        var user = await userManager.FindByIdAsync(request.Id);
+
+        return user is not null ? Results.Ok(user) : Results.NotFound();
+    })
+    .WithTags("User")
+    .RequireAuthorization();
 
 app.MapPost("/user/register", async (RegisterUser request, UserManager<IdentityUser> userManager) =>
     {
@@ -84,21 +136,13 @@ app.MapPost("/user/login",
 
             var token = tokenProvider.Create(user);
 
-            return Results.Ok(token);
+            return Results.Ok(new
+            {
+                token
+            });
         })
     .WithName("LoginUser")
     .WithTags("User")
-    .WithOpenApi();
-
-app.MapGet("/user/{id:guid}", async (UserManager<IdentityUser> userManager, Guid id) =>
-    {
-        var user = await userManager.FindByIdAsync(id.ToString());
-
-        return user is not null ? Results.Ok(user) : Results.NotFound();
-    })
-    .WithName("GetUser")
-    .WithTags("User")
-    .RequireAuthorization()
     .WithOpenApi();
 
 app.Run();
