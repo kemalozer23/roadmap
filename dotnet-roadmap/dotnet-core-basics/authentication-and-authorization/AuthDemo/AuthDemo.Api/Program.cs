@@ -33,7 +33,11 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(o =>
 builder.Services.AddSingleton<TokenProvider>();
 
 builder.Services
-    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
     .AddJwtBearer(o =>
     {
         o.RequireHttpsMetadata = false;
@@ -89,16 +93,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 // app.UseHttpsRedirection();
 
-app.MapPost("/user/get", async (GetUser request, UserManager<IdentityUser> userManager) =>
+app.MapGet("/user/{id}", async (string id, UserManager<IdentityUser> userManager) =>
     {
-        var user = await userManager.FindByIdAsync(request.Id);
+        var user = await userManager.FindByIdAsync(id);
 
         return user is not null ? Results.Ok(user) : Results.NotFound();
     })
+    .WithName("GetUser")
     .WithTags("User")
     .RequireAuthorization();
 
