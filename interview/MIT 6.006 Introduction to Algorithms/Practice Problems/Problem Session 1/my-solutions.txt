@@ -1,0 +1,13 @@
+1-1:
+a) (f4, f1, f5, f2, f3)
+b) (f5, f3, f2, f4, f1)
+
+1-2:
+a) 
+swap_ends(D)
+- x0 = D.delete_first()
+- xn = D.delete_last()
+- D.insert_first(xn)
+- D.insert_last(x0)
+
+b)
