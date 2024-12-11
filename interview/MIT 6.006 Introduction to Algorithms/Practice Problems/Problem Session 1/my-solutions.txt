@@ -11,3 +11,13 @@ swap_ends(D)
 - D.insert_last(x0)
 
 b)
+x0 x1 x2 x3
+k = 2
+1- x1 x2 x3 x0
+2- x2 x3 x0 x1
+
+shift_left(D, k)
+- x0 = D.delete_first()
+- D.insert_last(x0)
+- x1 = D.delete_first()
+- D.insert_last(x1)
