@@ -1,0 +1,54 @@
+Hints and Approach:
+Problem Type:
+
+This is a classic hashing problem.
+The goal is to find pairs of numbers that add up to the target efficiently.
+Clarify in an Interview:
+
+Ensure you understand the constraints:
+Only one solution exists.
+Indices of the same number can't be used twice.
+Ask if the input array is sorted (it's not here).
+Clarify if returning the indices in any order is acceptable.
+High-level Approach:
+
+Use a hash map to store numbers and their indices as you iterate through the array.
+For each number, calculate its complement (target - current_number) and check if it exists in the hash map.
+If the complement exists, return the indices of the current number and its complement.
+Optimal Solution Structure:
+public int[] TwoSum(int[] nums, int target) {
+    var numToIndex = new Dictionary<int, int>();
+    
+    for (int i = 0; i < nums.Length; i++) {
+        int complement = target - nums[i];
+        
+        if (numToIndex.ContainsKey(complement)) {
+            return new int[] { numToIndex[complement], i };
+        }
+        
+        numToIndex[nums[i]] = i; // Store the number and its index.
+    }
+    
+    throw new ArgumentException("No solution found");
+}
+Key Points to Articulate in an Interview:
+Naive Approach and Optimization:
+
+"A brute-force approach would involve nested loops to check all pairs, resulting in O(n²) time complexity. However, we can optimize to O(n) by using a hash map to store and look up complements efficiently."
+Explain the Hash Map:
+
+"The hash map allows us to store each number and its index as we traverse the array. When we find a number whose complement is already in the map, we know we've found our solution."
+Handle Edge Cases:
+
+"I'll handle edge cases like very small arrays or negative numbers by relying on the constraints provided (e.g., a valid solution always exists)."
+Throw an Exception:
+
+"Though the problem guarantees one solution, adding an exception ensures safety for unexpected inputs."
+Tricks for Efficiency:
+One-pass solution: You only iterate through the array once, achieving O(n) time complexity.
+Minimized Space: The hash map is efficient, storing each number only once.
+Topology Insight:
+This is a pair-sum problem that forms the basis for more complex challenges like finding triplets or subsets with specific properties.
+Variants include:
+Finding pairs in sorted arrays.
+Problems requiring all pairs, not just one.
