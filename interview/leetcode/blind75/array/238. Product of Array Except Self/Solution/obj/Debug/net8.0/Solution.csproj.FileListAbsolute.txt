@@ -1,0 +1,15 @@
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.AssemblyInfoInputs.cache
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.AssemblyInfo.cs
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.csproj.CoreCompileInputs.cache
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.sourcelink.json
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/bin/Debug/net8.0/Solution
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/bin/Debug/net8.0/Solution.deps.json
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/bin/Debug/net8.0/Solution.runtimeconfig.json
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/bin/Debug/net8.0/Solution.dll
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/bin/Debug/net8.0/Solution.pdb
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.dll
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/refint/Solution.dll
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.pdb
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/Solution.genruntimeconfig.cache
+/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/obj/Debug/net8.0/ref/Solution.dll
