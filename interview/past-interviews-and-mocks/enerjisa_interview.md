@@ -5,4 +5,5 @@
 - Testing, Unit Testing
 - Monitoring
 - Logging
+- Error Handling
 - Project management types (waterfall, agile, ...)
