@@ -33,9 +33,9 @@ Output: true
 - `s` consists of parentheses only `'()[]{}'`
 
 ### Type of DSA Concept Tested:
-- **Stack Data Structure**: Used to track open brackets and match them with closing brackets.
+- **Stack Data Structure**: A stack is a linear data structure that follows the **Last In, First Out (LIFO)** principle, meaning that the last element added is the first one to be removed. It is useful for tracking open brackets and ensuring they are closed in the correct order.
 - **LIFO Principle (Last-In-First-Out)**: Ensures that the most recent opening bracket is matched with the corresponding closing bracket.
-- **Hash Map (Optional Enhancement)**: Can be used for quick lookup of matching pairs.
+- **Hash Map (Optional Enhancement)**: A hash map (or dictionary) is a data structure that allows **key-value** storage and retrieval in constant time. It can be used for quick lookup of matching pairs of brackets.
 
 ## Solution Approaches
 ### 1. Stack-Based Solution (Optimal)
