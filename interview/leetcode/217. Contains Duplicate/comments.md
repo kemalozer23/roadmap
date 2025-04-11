@@ -1,52 +1,56 @@
-# Contains Duplicate: Hints and Approach
+# 217. Contains Duplicate - Technical Guide
 
-## Problem Type
-This is a **hashing problem** that involves detecting duplicates efficiently.
+## Problem Statement
+Given an integer array `nums`, return `true` if any value appears **at least twice** in the array, and return `false` if every element is **distinct**.
 
-## Clarify in an Interview
-1. **Confirm**:
-   - Constraints such as the size of the array and the range of elements.
-2. **Ask**:
-   - Is using additional space acceptable (e.g., a hash set)?
-3. **Discuss**:
-   - Expected time complexity.
+## Examples
+```plaintext
+Input: nums = [1,2,3,1]
+Output: true
+Explanation: The element 1 occurs at the indices 0 and 3.
 
-## High-level Approach
-1. Use a **hash set** to store elements as you iterate through the array.
-2. If an element already exists in the set, return `true`.
-3. If the iteration completes without finding duplicates, return `false`.
+Input: nums = [1,2,3,4]
+Output: false
+Explanation: All elements are distinct.
 
-## Key Points to Articulate in an Interview
+Input: nums = [1,1,1,3,3,4,3,2,4,2]
+Output: true
+```
 
-### Explain the Approach
-- **Hash Set Usage**: 
-  - "I'll use a hash set to detect duplicates efficiently. It offers **O(1)** average time complexity for both insertion and lookup, making it ideal for this problem."
+## Constraints
+- 1 <= nums.length <= 10^5
+- -10^9 <= nums[i] <= 10^9
 
-### Edge Cases
-1. Empty array or a single-element array:
-   - "These cases can't contain duplicates, so the result is `false`."
-2. Negative numbers or large values:
-   - "A hash set handles these without constraints on values."
+## Intuition
+We need to determine whether any number appears more than once in the array. A brute-force approach using nested loops would be inefficient for large arrays. Instead, we can use a data structure that allows constant-time lookup to track previously seen elements.
 
-### Space-Time Tradeoff
-- **Current Approach**:
-  - Uses **O(n)** additional space for the hash set.
-- **Alternative (Sorting)**:
-  - Avoids extra space but increases time complexity to **O(n log n)**.
+## Approach (Without Libraries)
+Use a set-like behavior with a dictionary to store seen elements.
 
-## Alternative Approach (Sorting)
-1. Sort the array.
-2. Check adjacent elements for duplicates:
-   - If any two consecutive elements are the same, return `true`.
-3. If no duplicates are found, return `false`.
+## Python Code (No library usage)
+```python
+def containsDuplicate(nums):
+    seen = {}  # acts like a set
+    for num in nums:
+        if num in seen:
+            return True
+        seen[num] = True
+    return False
+```
 
-## Tricks for Efficiency
-1. Use a hash set for fast lookups when time is critical.
-2. Consider sorting only if space is restricted, and time complexity is secondary.
+## Time and Space Complexity
+- **Time Complexity:** O(n), where n is the length of the input array.
+- **Space Complexity:** O(n), for storing seen elements.
 
-## Topology Insight
-This is a **set membership problem**, fundamental for detecting uniqueness or counting elements.
+## Follow-Up
+- If you can sort the array first (modifying the array is allowed), then check adjacent elements: this can reduce space complexity to O(1) but increases time to O(n log n).
 
-### Variants
-- Counting the number of duplicates.
-- Returning the first duplicate or all duplicates.
+```python
+# Optional Follow-Up Approach (modifies the input)
+def containsDuplicateSorted(nums):
+    nums.sort()
+    for i in range(1, len(nums)):
+        if nums[i] == nums[i - 1]:
+            return True
+    return False
+```
