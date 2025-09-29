@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HsDS7HJl89eYkn97HrVkmjnf/Ao+RGVLUhHfAUDfTpfhSgpTp+QlJ9OfgWCOvA26QpT28Nqm5mj0QZhdJOYdyQ==",
+  "dgSpecHash": "pF/xQ6t9PfI=",
   "success": true,
-  "projectFilePath": "/Users/kemalozer/Code/Personal/roadmap/dotnet-roadmap/dotnet-core-basics/authentication-and-authorization/AuthDemo/AuthDemo.Api/AuthDemo.Api.csproj",
+  "projectFilePath": "/Users/kemalozer/Code/roadmap/dotnet-roadmap/dotnet-core-basics/authentication-and-authorization/AuthDemo/AuthDemo.Api/AuthDemo.Api.csproj",
   "expectedPackageFiles": [
     "/Users/kemalozer/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/kemalozer/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.11/microsoft.aspnetcore.authentication.jwtbearer.8.0.11.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F7+UoSXloiAAOEvD/ipUYN+G4gmRE/QChfmm1v83HMIrLJ7+NHVLAa/3zMeSegqy0QcD45U4Ddq48V4dfdjwTw==",
+  "dgSpecHash": "U6ZxstMvCwk=",
   "success": true,
-  "projectFilePath": "/Users/kemalozer/Code/Personal/roadmap/interview/leetcode/blind75/array/238. Product of Array Except Self/Solution/Solution.csproj",
+  "projectFilePath": "/Users/kemalozer/Code/roadmap/interview/leetcode/238. Product of Array Except Self/Solution/Solution.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

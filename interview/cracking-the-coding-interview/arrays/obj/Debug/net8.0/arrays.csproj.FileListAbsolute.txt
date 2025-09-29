@@ -1,0 +1,15 @@
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.AssemblyInfoInputs.cache
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.AssemblyInfo.cs
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.csproj.CoreCompileInputs.cache
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.sourcelink.json
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/bin/Debug/net8.0/arrays
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/bin/Debug/net8.0/arrays.deps.json
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/bin/Debug/net8.0/arrays.runtimeconfig.json
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/bin/Debug/net8.0/arrays.dll
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/bin/Debug/net8.0/arrays.pdb
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.dll
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/refint/arrays.dll
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.pdb
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/arrays.genruntimeconfig.cache
+/Users/kemalozer/Code/roadmap/interview/cracking-the-coding-interview/arrays/obj/Debug/net8.0/ref/arrays.dll
