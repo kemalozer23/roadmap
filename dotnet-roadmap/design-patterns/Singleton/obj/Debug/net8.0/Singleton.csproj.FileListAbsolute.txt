@@ -1,0 +1,15 @@
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.AssemblyInfoInputs.cache
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.AssemblyInfo.cs
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.csproj.CoreCompileInputs.cache
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.sourcelink.json
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/bin/Debug/net8.0/Singleton
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/bin/Debug/net8.0/Singleton.deps.json
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/bin/Debug/net8.0/Singleton.runtimeconfig.json
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/bin/Debug/net8.0/Singleton.dll
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/bin/Debug/net8.0/Singleton.pdb
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.dll
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/refint/Singleton.dll
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.pdb
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/Singleton.genruntimeconfig.cache
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Singleton/obj/Debug/net8.0/ref/Singleton.dll
