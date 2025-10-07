@@ -1,0 +1,15 @@
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.AssemblyInfoInputs.cache
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.AssemblyInfo.cs
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.csproj.CoreCompileInputs.cache
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.sourcelink.json
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/bin/Debug/net8.0/Builder
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/bin/Debug/net8.0/Builder.deps.json
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/bin/Debug/net8.0/Builder.runtimeconfig.json
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/bin/Debug/net8.0/Builder.dll
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/bin/Debug/net8.0/Builder.pdb
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.dll
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/refint/Builder.dll
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.pdb
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/Builder.genruntimeconfig.cache
+/Users/kemalozer/Code/roadmap/dotnet-roadmap/design-patterns/Creational/Builder/obj/Debug/net8.0/ref/Builder.dll
