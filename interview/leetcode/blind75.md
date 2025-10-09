@@ -4,4 +4,6 @@
 
 - ### [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
+- ### [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+
 ---
