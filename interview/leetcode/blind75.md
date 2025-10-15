@@ -7,6 +7,7 @@
 - ### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - ### [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - ### [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- ### [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - ### [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
 ---
